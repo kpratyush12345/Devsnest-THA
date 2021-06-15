@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calci</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form action="" class="calculator" name="calci">
+      <input class="calc" type="text" name="cal" />
+      <div class="clear" onclick="document.calci.cal.value =''">C</div>
+      <div onclick="document.calci.cal.value +='/'">/</div>
+      <div onclick="document.calci.cal.value +='*'">*</div>
+      <div onclick="document.calci.cal.value +='7'">7</div>
+      <div onclick="document.calci.cal.value +='8'">8</div>
+      <div onclick="document.calci.cal.value +='9'">9</div>
+      <div onclick="document.calci.cal.value +='-'">-</div>
+      <div onclick="document.calci.cal.value +='4'">4</div>
+      <div onclick="document.calci.cal.value +='5'">5</div>
+      <div onclick="document.calci.cal.value +='6'">6</div>
+      <div class="add" onclick="document.calci.cal.value +='+'">+</div>
+      <div onclick="document.calci.cal.value +='3'">3</div>
+      <div onclick="document.calci.cal.value +='2'">2</div>
+      <div onclick="document.calci.cal.value +='1'">1</div>
+      <div onclick="document.calci.cal.value +='0'">0</div>
+      <div onclick="document.calci.cal.value +='00'">00</div>
+      <div onclick="document.calci.cal.value +='.'">.</div>
+      <div
+        class="equal"
+        onclick="document.calci.cal.value =eval(calci.cal.value)"
+      >
+        =
+      </div>
+    </form>
+  </body>
+</html>
